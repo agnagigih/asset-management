@@ -12,7 +12,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/asset")
 public class AssetController {
-    private AssetService assetService;
+    private final AssetService assetService;
 
     @Autowired
     public AssetController(AssetService assetService) {

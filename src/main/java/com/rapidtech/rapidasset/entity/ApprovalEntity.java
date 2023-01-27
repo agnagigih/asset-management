@@ -1,8 +1,11 @@
 package com.rapidtech.rapidasset.entity;
 
+import com.fasterxml.jackson.databind.util.BeanUtil;
+import com.rapidtech.rapidasset.model.ApprovalRequest;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.BeanUtils;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -36,4 +39,8 @@ public class ApprovalEntity {
     @Temporal(TemporalType.DATE)
     @Column(name = "updated_date")
     private Date updatedDate;
+
+    public ApprovalEntity(ApprovalRequest request) {
+        BeanUtils.copyProperties(request, this);
+    }
 }

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rapidtech</groupId>
-	<artifactId>rapidasset</artifactId>
+	<artifactId>asset-management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>rapidasset</name>
 	<description>Rapid Asset</description>

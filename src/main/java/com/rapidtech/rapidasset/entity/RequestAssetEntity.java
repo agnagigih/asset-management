@@ -38,7 +38,7 @@ public class RequestAssetEntity {
     private Date requestDate;
 
     @OneToMany(mappedBy = "requestAsset", cascade = CascadeType.ALL, orphanRemoval = true)
-    List<ApprovalEntity> approval;
+    private List<ApprovalEntity> approval;
 
     public RequestAssetEntity(RequestAssetReq request) {
         BeanUtils.copyProperties(request, this);

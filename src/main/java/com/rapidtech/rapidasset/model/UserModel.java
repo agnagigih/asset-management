@@ -13,6 +13,7 @@ public class UserModel {
     private Long id;
     private String fullName;
     private String address;
+    private String role;
 
     public UserModel(UserEntity userEntity) {
         BeanUtils.copyProperties(userEntity, this);

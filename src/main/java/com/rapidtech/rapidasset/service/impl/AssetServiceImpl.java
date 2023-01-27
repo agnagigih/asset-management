@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @Service
 public class AssetServiceImpl implements AssetService {
-    private AssetRepository assetRepository;
+    private final AssetRepository assetRepository;
 
     @Autowired
     public AssetServiceImpl(AssetRepository assetRepository){
